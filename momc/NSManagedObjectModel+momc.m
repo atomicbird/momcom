@@ -104,18 +104,45 @@
     
     if ([[NSFileManager defaultManager] fileExistsAtPath:xcdatamodeldPath isDirectory:&isDirectory] && isDirectory) {
         // Create a new .momd container
-        momdPath = [resultDirectoryPath stringByAppendingPathComponent:[[[xcdatamodeldPath lastPathComponent] stringByDeletingPathExtension] stringByAppendingPathComponent:@"momd"]];
+        momdPath = [resultDirectoryPath stringByAppendingPathComponent:[[[xcdatamodeldPath lastPathComponent] stringByDeletingPathExtension] stringByAppendingPathExtension:@"momd"]];
         [[NSFileManager defaultManager] createDirectoryAtPath:momdPath withIntermediateDirectories:YES attributes:0 error:nil];
+        
+        NSString *currentVersionName = nil;
+        NSMutableDictionary *modelPathsByName = [NSMutableDictionary dictionary];
         
         NSArray *xcdatamodeldContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:xcdatamodeldPath error:nil];
         for (NSString *filename in xcdatamodeldContents) {
             NSString *fullPath = [xcdatamodeldPath stringByAppendingPathComponent:filename];
             if ([filename hasSuffix:@".xcdatamodel"]) {
-                [NSManagedObjectModel _compileSingleModelFile:fullPath inDirectory:momdPath];
+                NSString *compiledModelPath = [NSManagedObjectModel _compileSingleModelFile:fullPath inDirectory:momdPath];
+                NSString *modelName = [filename stringByDeletingPathExtension];
+                [modelPathsByName setObject:compiledModelPath forKey:modelName];
             } else if ([filename isEqualToString:@".xccurrentversion"]) {
                 NSDictionary *versionInfo = [NSDictionary dictionaryWithContentsOfFile:fullPath];
-                NSString *currentVersionName = [versionInfo objectForKey:@"_XCCurrentVersionName"];
+                currentVersionName = [[versionInfo objectForKey:@"_XCCurrentVersionName"] stringByDeletingPathExtension];
             }
+        }
+        
+        if (currentVersionName != nil) {
+            // Run through each model to generate VersionInfo.plist
+            NSMutableDictionary *versionInfo = [NSMutableDictionary dictionary];
+            [versionInfo setObject:currentVersionName forKey:@"NSManagedObjectModel_CurrentVersionName"];
+            NSMutableDictionary *versionHashes = [NSMutableDictionary dictionary];
+            [versionInfo setObject:versionHashes forKey:@"NSManagedObjectModel_VersionHashes"];
+            
+            for (NSString *modelName in [modelPathsByName allKeys]) {
+                NSMutableDictionary *currentVersionHashes = [NSMutableDictionary dictionary];
+                [versionHashes setObject:currentVersionHashes forKey:modelName];
+                
+                NSString *compiledModelPath = [modelPathsByName objectForKey:modelName];
+                NSManagedObjectModel *compiledModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:[NSURL fileURLWithPath:compiledModelPath]];
+                for (NSEntityDescription *entityDescription in compiledModel) {
+                    NSData *versionHash = [entityDescription versionHash];
+                    [currentVersionHashes setObject:versionHash forKey:[entityDescription name]];
+                }
+            }
+            NSString *versionInfoPath = [xcdatamodeldPath stringByAppendingPathComponent:@"VersionInfo.plist"];
+            [versionInfo writeToFile:versionInfoPath atomically:YES];
         }
     }
     return momdPath;
