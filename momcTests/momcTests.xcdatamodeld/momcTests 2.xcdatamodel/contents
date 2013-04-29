@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AbstractEntity" isAbstract="YES" syncable="YES"/>
+    <entity name="Entity" representedClassName="EntityClass" parentEntity="AbstractEntity" elementID="myRenamingIdentifier" versionHashModifier="myVersionHashModifier">
+        <attribute name="binaryAttribute" optional="YES" transient="YES" attributeType="Binary" spotlightIndexingEnabled="YES" storedInTruthFile="YES" syncable="YES">
+            <userInfo>
+                <entry key="binaryBar" value="NO"/>
+                <entry key="binaryBaz" value="MAYBE"/>
+                <entry key="binaryFoo" value="YES"/>
+            </userInfo>
+        </attribute>
+        <attribute name="booleanAttribute" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dateAttribute" optional="YES" attributeType="Date" minDateTimeInterval="284000400" minValueString="2010-01-01 01:00:00" maxDateTimeInterval="602395200" maxValueString="2020-02-03 04:00" defaultDateTimeInterval="388411200" defaultValueString="2013-04-23 12:00:00 +0000" syncable="YES"/>
+        <attribute name="decimalAttribute" optional="YES" attributeType="Decimal" minValueString="-4.5" maxValueString="4.5" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="doubleAttribute" optional="YES" attributeType="Double" minValueString="-3.5" maxValueString="3.5" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="floatAttribute" optional="YES" attributeType="Float" minValueString="-2.5" maxValueString="2.5" defaultValueString="0" syncable="YES"/>
+        <attribute name="int16Attribute" optional="YES" attributeType="Integer 16" minValueString="-3" maxValueString="9" defaultValueString="0" syncable="YES"/>
+        <attribute name="int32Attribute" optional="YES" attributeType="Integer 32" minValueString="-11" maxValueString="11" defaultValueString="0" syncable="YES"/>
+        <attribute name="int64Attribute" optional="YES" attributeType="Integer 64" minValueString="-12" maxValueString="12" defaultValueString="0" syncable="YES"/>
+        <attribute name="stringAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transformableAttribute" optional="YES" attributeType="Transformable" valueTransformerName="myValueTransformer" syncable="YES"/>
+        <relationship name="otherEntities" optional="YES" toMany="YES" minCount="1" maxCount="9" deletionRule="Nullify" destinationEntity="OtherEntity" inverseName="mainEntity" inverseEntity="OtherEntity" syncable="YES"/>
+        <fetchedProperty name="yesBooleans" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Entity" predicateString="booleanAttribute = YES"/>
+        </fetchedProperty>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="booleanAttribute"/>
+                <index value="dateAttribute"/>
+            </compoundIndex>
+            <compoundIndex>
+                <index value="decimalAttribute"/>
+                <index value="doubleAttribute"/>
+            </compoundIndex>
+        </compoundIndexes>
+        <userInfo>
+            <entry key="someKey" value="randomValue"/>
+        </userInfo>
+    </entity>
+    <entity name="OtherEntity" syncable="YES">
+        <relationship name="mainEntity" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Entity" inverseName="otherEntities" inverseEntity="Entity" syncable="YES"/>
+    </entity>
+    <entity name="UnrelatedEntity" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="Entity" predicateString="booleanAttribute == 1 AND floatAttribute > 5"/>
+    <configuration name="UnrelatedConfiguration">
+        <memberEntity name="UnrelatedEntity"/>
+    </configuration>
+    <elements>
+        <element name="AbstractEntity" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Entity" positionX="160" positionY="192" width="128" height="254"/>
+        <element name="OtherEntity" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="UnrelatedEntity" positionX="160" positionY="192" width="128" height="60"/>
+    </elements>
+</model>
