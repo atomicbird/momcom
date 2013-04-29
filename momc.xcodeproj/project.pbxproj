@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEA48B0417271D4A0063C9BA /* NSFetchRequest+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */; };
 		EEC0EE83171F61BF003328B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC0EE82171F61BF003328B2 /* Foundation.framework */; };
 		EEC0EE86171F61BF003328B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE85171F61BF003328B2 /* main.m */; };
 		EEC0EE8A171F61BF003328B2 /* momc.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEC0EE89171F61BF003328B2 /* momc.1 */; };
+		EEC0EE92171F61E8003328B2 /* NSManagedObjectModel+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momc.m */; };
+		EEC0EE94171F6203003328B2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC0EE93171F6203003328B2 /* CoreData.framework */; };
+		EEC0EE97171F6426003328B2 /* NSEntityDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE96171F6426003328B2 /* NSEntityDescription+momc.m */; };
+		EEC0EE9A1720A362003328B2 /* NSAttributeDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE991720A362003328B2 /* NSAttributeDescription+momc.m */; };
+		EEC0EE9D1720A388003328B2 /* NSPropertyDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momc.m */; };
+		EEC0EEA01720A89F003328B2 /* NSRelationshipDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momc.m */; };
+		EEC0EEA31720A94B003328B2 /* NSFetchedPropertyDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +34,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EEA48B0217271D490063C9BA /* NSFetchRequest+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchRequest+momc.h"; sourceTree = "<group>"; };
+		EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+momc.m"; sourceTree = "<group>"; };
 		EEC0EE7F171F61BF003328B2 /* momc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = momc; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC0EE82171F61BF003328B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EEC0EE85171F61BF003328B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEC0EE88171F61BF003328B2 /* momc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "momc-Prefix.pch"; sourceTree = "<group>"; };
 		EEC0EE89171F61BF003328B2 /* momc.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = momc.1; sourceTree = "<group>"; };
+		EEC0EE90171F61E8003328B2 /* NSManagedObjectModel+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+momc.h"; sourceTree = "<group>"; };
+		EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSManagedObjectModel+momc.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EE93171F6203003328B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EEC0EE95171F6426003328B2 /* NSEntityDescription+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSEntityDescription+momc.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EEC0EE96171F6426003328B2 /* NSEntityDescription+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSEntityDescription+momc.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EE981720A362003328B2 /* NSAttributeDescription+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSAttributeDescription+momc.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EEC0EE991720A362003328B2 /* NSAttributeDescription+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSAttributeDescription+momc.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EE9B1720A388003328B2 /* NSPropertyDescription+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPropertyDescription+momc.h"; sourceTree = "<group>"; };
+		EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPropertyDescription+momc.m"; sourceTree = "<group>"; };
+		EEC0EE9E1720A89F003328B2 /* NSRelationshipDescription+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRelationshipDescription+momc.h"; sourceTree = "<group>"; };
+		EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRelationshipDescription+momc.m"; sourceTree = "<group>"; };
+		EEC0EEA11720A94B003328B2 /* NSFetchedPropertyDescription+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSFetchedPropertyDescription+momc.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSFetchedPropertyDescription+momc.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC0EE94171F6203003328B2 /* CoreData.framework in Frameworks */,
 				EEC0EE83171F61BF003328B2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +89,7 @@
 		EEC0EE81171F61BF003328B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EEC0EE93171F6203003328B2 /* CoreData.framework */,
 				EEC0EE82171F61BF003328B2 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -74,6 +99,20 @@
 			isa = PBXGroup;
 			children = (
 				EEC0EE85171F61BF003328B2 /* main.m */,
+				EEC0EE90171F61E8003328B2 /* NSManagedObjectModel+momc.h */,
+				EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momc.m */,
+				EEC0EE95171F6426003328B2 /* NSEntityDescription+momc.h */,
+				EEC0EE96171F6426003328B2 /* NSEntityDescription+momc.m */,
+				EEC0EE981720A362003328B2 /* NSAttributeDescription+momc.h */,
+				EEC0EE991720A362003328B2 /* NSAttributeDescription+momc.m */,
+				EEC0EE9B1720A388003328B2 /* NSPropertyDescription+momc.h */,
+				EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momc.m */,
+				EEC0EE9E1720A89F003328B2 /* NSRelationshipDescription+momc.h */,
+				EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momc.m */,
+				EEC0EEA11720A94B003328B2 /* NSFetchedPropertyDescription+momc.h */,
+				EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momc.m */,
+				EEA48B0217271D490063C9BA /* NSFetchRequest+momc.h */,
+				EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */,
 				EEC0EE89171F61BF003328B2 /* momc.1 */,
 				EEC0EE87171F61BF003328B2 /* Supporting Files */,
 			);
@@ -140,6 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC0EE86171F61BF003328B2 /* main.m in Sources */,
+				EEC0EE92171F61E8003328B2 /* NSManagedObjectModel+momc.m in Sources */,
+				EEC0EE97171F6426003328B2 /* NSEntityDescription+momc.m in Sources */,
+				EEC0EE9A1720A362003328B2 /* NSAttributeDescription+momc.m in Sources */,
+				EEC0EE9D1720A388003328B2 /* NSPropertyDescription+momc.m in Sources */,
+				EEC0EEA01720A89F003328B2 /* NSRelationshipDescription+momc.m in Sources */,
+				EEC0EEA31720A94B003328B2 /* NSFetchedPropertyDescription+momc.m in Sources */,
+				EEA48B0417271D4A0063C9BA /* NSFetchRequest+momc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +288,7 @@
 				EEC0EE8F171F61BF003328B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

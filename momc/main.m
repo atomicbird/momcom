@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "NSManagedObjectModel+momc.h"
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        NSURL *fileURL = [NSURL fileURLWithPath:@"/Users/tph/Dropbox/Projects/momdec/momdecTests/momdecTests.xcdatamodeld/momdecTests.xcdatamodel/contents"];
+        NSError *compileError = nil;
+        NSXMLDocument *document = [[NSXMLDocument alloc] initWithContentsOfURL:fileURL options:0 error:&compileError];
+        NSManagedObjectModel *model = [NSManagedObjectModel compileFromDocument:document error:&compileError];
     }
     return 0;
 }
