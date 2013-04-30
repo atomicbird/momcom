@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE259AF2172F11B200A309CF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE259AF1172F11B200A309CF /* SenTestingKit.framework */; };
+		EE259AF4172F11B200A309CF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE259AF3172F11B200A309CF /* Cocoa.framework */; };
+		EE259AFE172F11B200A309CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE259AFC172F11B200A309CF /* InfoPlist.strings */; };
+		EE259B01172F11B200A309CF /* momcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE259B00172F11B200A309CF /* momcTests.m */; };
+		EE259B08172F125A00A309CF /* momcTests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE259B06172F125A00A309CF /* momcTests.xcdatamodeld */; };
+		EE259B09172F126900A309CF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC0EE93171F6203003328B2 /* CoreData.framework */; };
+		EE259B0B172F129F00A309CF /* momcTests.xcdatamodeld in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE259B06172F125A00A309CF /* momcTests.xcdatamodeld */; };
+		EE259B0C172F16DA00A309CF /* NSManagedObjectModel+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momc.m */; };
+		EE259B0D172F16DA00A309CF /* NSEntityDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE96171F6426003328B2 /* NSEntityDescription+momc.m */; };
+		EE259B0E172F16DA00A309CF /* NSAttributeDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE991720A362003328B2 /* NSAttributeDescription+momc.m */; };
+		EE259B0F172F16DA00A309CF /* NSPropertyDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momc.m */; };
+		EE259B10172F16DA00A309CF /* NSRelationshipDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momc.m */; };
+		EE259B11172F16DA00A309CF /* NSFetchedPropertyDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momc.m */; };
+		EE259B12172F16DA00A309CF /* NSFetchRequest+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */; };
+		EE259B18172F1D3400A309CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE259B17172F1D3400A309CF /* Security.framework */; };
+		EE259B19172F1E1700A309CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE259B17172F1D3400A309CF /* Security.framework */; };
 		EEA48B0417271D4A0063C9BA /* NSFetchRequest+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */; };
 		EEC0EE83171F61BF003328B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC0EE82171F61BF003328B2 /* Foundation.framework */; };
 		EEC0EE86171F61BF003328B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE85171F61BF003328B2 /* main.m */; };
@@ -21,6 +37,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		EE259B0A172F128E00A309CF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				EE259B0B172F129F00A309CF /* momcTests.xcdatamodeld in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEC0EE7D171F61BF003328B2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,6 +60,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EE259AF0172F11B200A309CF /* momcTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = momcTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE259AF1172F11B200A309CF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EE259AF3172F11B200A309CF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		EE259AF6172F11B200A309CF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EE259AF7172F11B200A309CF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EE259AF8172F11B200A309CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE259AFB172F11B200A309CF /* momcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "momcTests-Info.plist"; sourceTree = "<group>"; };
+		EE259AFD172F11B200A309CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE259AFF172F11B200A309CF /* momcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = momcTests.h; sourceTree = "<group>"; };
+		EE259B00172F11B200A309CF /* momcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = momcTests.m; sourceTree = "<group>"; };
+		EE259B02172F11B200A309CF /* momcTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "momcTests-Prefix.pch"; sourceTree = "<group>"; };
+		EE259B07172F125A00A309CF /* momcTests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = momcTests.xcdatamodel; sourceTree = "<group>"; };
+		EE259B13172F196B00A309CF /* momcTests 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "momcTests 2.xcdatamodel"; sourceTree = "<group>"; };
+		EE259B17172F1D3400A309CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EEA48B0217271D490063C9BA /* NSFetchRequest+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchRequest+momc.h"; sourceTree = "<group>"; };
 		EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+momc.m"; sourceTree = "<group>"; };
 		EEC0EE7F171F61BF003328B2 /* momc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = momc; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,10 +97,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EE259AEC172F11B200A309CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE259B18172F1D3400A309CF /* Security.framework in Frameworks */,
+				EE259B09172F126900A309CF /* CoreData.framework in Frameworks */,
+				EE259AF2172F11B200A309CF /* SenTestingKit.framework in Frameworks */,
+				EE259AF4172F11B200A309CF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEC0EE7C171F61BF003328B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE259B19172F1E1700A309CF /* Security.framework in Frameworks */,
 				EEC0EE94171F6203003328B2 /* CoreData.framework in Frameworks */,
 				EEC0EE83171F61BF003328B2 /* Foundation.framework in Frameworks */,
 			);
@@ -69,10 +121,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE259AF5172F11B200A309CF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE259AF6172F11B200A309CF /* AppKit.framework */,
+				EE259AF7172F11B200A309CF /* CoreData.framework */,
+				EE259AF8172F11B200A309CF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		EE259AF9172F11B200A309CF /* momcTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE259AFF172F11B200A309CF /* momcTests.h */,
+				EE259B00172F11B200A309CF /* momcTests.m */,
+				EE259AFA172F11B200A309CF /* Supporting Files */,
+				EE259B06172F125A00A309CF /* momcTests.xcdatamodeld */,
+			);
+			path = momcTests;
+			sourceTree = "<group>";
+		};
+		EE259AFA172F11B200A309CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE259AFB172F11B200A309CF /* momcTests-Info.plist */,
+				EE259AFC172F11B200A309CF /* InfoPlist.strings */,
+				EE259B02172F11B200A309CF /* momcTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		EEC0EE76171F61BF003328B2 = {
 			isa = PBXGroup;
 			children = (
 				EEC0EE84171F61BF003328B2 /* momc */,
+				EE259AF9172F11B200A309CF /* momcTests */,
 				EEC0EE81171F61BF003328B2 /* Frameworks */,
 				EEC0EE80171F61BF003328B2 /* Products */,
 			);
@@ -82,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				EEC0EE7F171F61BF003328B2 /* momc */,
+				EE259AF0172F11B200A309CF /* momcTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,8 +174,12 @@
 		EEC0EE81171F61BF003328B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE259B17172F1D3400A309CF /* Security.framework */,
 				EEC0EE93171F6203003328B2 /* CoreData.framework */,
 				EEC0EE82171F61BF003328B2 /* Foundation.framework */,
+				EE259AF1172F11B200A309CF /* SenTestingKit.framework */,
+				EE259AF3172F11B200A309CF /* Cocoa.framework */,
+				EE259AF5172F11B200A309CF /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +219,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EE259AEF172F11B200A309CF /* momcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE259B05172F11B200A309CF /* Build configuration list for PBXNativeTarget "momcTests" */;
+			buildPhases = (
+				EE259AEB172F11B200A309CF /* Sources */,
+				EE259AEC172F11B200A309CF /* Frameworks */,
+				EE259AED172F11B200A309CF /* Resources */,
+				EE259B0A172F128E00A309CF /* CopyFiles */,
+				EE259AEE172F11B200A309CF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = momcTests;
+			productName = momcTests;
+			productReference = EE259AF0172F11B200A309CF /* momcTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		EEC0EE7E171F61BF003328B2 /* momc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEC0EE8D171F61BF003328B2 /* Build configuration list for PBXNativeTarget "momc" */;
@@ -169,11 +277,55 @@
 			projectRoot = "";
 			targets = (
 				EEC0EE7E171F61BF003328B2 /* momc */,
+				EE259AEF172F11B200A309CF /* momcTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		EE259AED172F11B200A309CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE259AFE172F11B200A309CF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE259AEE172F11B200A309CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		EE259AEB172F11B200A309CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE259B0C172F16DA00A309CF /* NSManagedObjectModel+momc.m in Sources */,
+				EE259B0D172F16DA00A309CF /* NSEntityDescription+momc.m in Sources */,
+				EE259B0E172F16DA00A309CF /* NSAttributeDescription+momc.m in Sources */,
+				EE259B0F172F16DA00A309CF /* NSPropertyDescription+momc.m in Sources */,
+				EE259B10172F16DA00A309CF /* NSRelationshipDescription+momc.m in Sources */,
+				EE259B11172F16DA00A309CF /* NSFetchedPropertyDescription+momc.m in Sources */,
+				EE259B12172F16DA00A309CF /* NSFetchRequest+momc.m in Sources */,
+				EE259B01172F11B200A309CF /* momcTests.m in Sources */,
+				EE259B08172F125A00A309CF /* momcTests.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEC0EE7B171F61BF003328B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,7 +343,44 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		EE259AFC172F11B200A309CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE259AFD172F11B200A309CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		EE259B03172F11B200A309CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "momcTests/momcTests-Prefix.pch";
+				INFOPLIST_FILE = "momcTests/momcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EE259B04172F11B200A309CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "momcTests/momcTests-Prefix.pch";
+				INFOPLIST_FILE = "momcTests/momcTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		EEC0EE8B171F61BF003328B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -272,6 +461,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EE259B05172F11B200A309CF /* Build configuration list for PBXNativeTarget "momcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE259B03172F11B200A309CF /* Debug */,
+				EE259B04172F11B200A309CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EEC0EE7A171F61BF003328B2 /* Build configuration list for PBXProject "momc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -291,6 +489,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE259B06172F125A00A309CF /* momcTests.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE259B13172F196B00A309CF /* momcTests 2.xcdatamodel */,
+				EE259B07172F125A00A309CF /* momcTests.xcdatamodel */,
+			);
+			currentVersion = EE259B13172F196B00A309CF /* momcTests 2.xcdatamodel */;
+			path = momcTests.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EEC0EE77171F61BF003328B2 /* Project object */;
 }
