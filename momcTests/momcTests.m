@@ -94,6 +94,16 @@
     for (NSString *configurationName in compiledConfigurations) {
         STAssertEqualObjects([compiledModel entitiesForConfiguration:configurationName], [xcrunCompiledModel entitiesForConfiguration:configurationName], @"Configuration does not match: %@", configurationName);
     }
+    
+    // Creating the two model objects from .momd bundles implicitly does a partial check on VersionInfo.plist,
+    // but let's make sure.
+    NSString *compiledModelVersionInfoPath = [compiledModelPath stringByAppendingPathComponent:@"VersionInfo.plist"];
+    NSDictionary *compiledModelVersionInfo = [NSDictionary dictionaryWithContentsOfFile:compiledModelVersionInfoPath];
+    NSString *xcrunCompiledModelVersionInfoPath = [xcrunCompiledModelPath stringByAppendingPathComponent:@"VersionInfo.plist"];
+    NSDictionary *xcrunCompiledModelVersionInfo = [NSDictionary dictionaryWithContentsOfFile:xcrunCompiledModelVersionInfoPath];
+
+    STAssertEqualObjects([compiledModelVersionInfo objectForKey:@"NSManagedObjectModel_CurrentVersionName"], [xcrunCompiledModelVersionInfo objectForKey:@"NSManagedObjectModel_CurrentVersionName"], @"Current version mismatch in Version.plist");
+    STAssertEqualObjects([compiledModelVersionInfo objectForKey:@"NSManagedObjectModel_VersionHashes"], [xcrunCompiledModelVersionInfo objectForKey:@"NSManagedObjectModel_VersionHashes"], @"Version hash mismatch in Version.plist");
 }
 
 @end

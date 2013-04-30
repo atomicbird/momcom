@@ -141,7 +141,7 @@
                     [currentVersionHashes setObject:versionHash forKey:[entityDescription name]];
                 }
             }
-            NSString *versionInfoPath = [xcdatamodeldPath stringByAppendingPathComponent:@"VersionInfo.plist"];
+            NSString *versionInfoPath = [momdPath stringByAppendingPathComponent:@"VersionInfo.plist"];
             [versionInfo writeToFile:versionInfoPath atomically:YES];
         }
     }
