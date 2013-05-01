@@ -105,7 +105,12 @@
         }
     } else {
         if (error != nil) {
-            *error = [NSError errorWithDomain:NSCocoaErrorDomain code:-1 userInfo:@{NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Could not find a model contents file at %@", xcdatamodelPath]}];
+            NSString *modelElementsFilePath = [xcdatamodelPath stringByAppendingPathComponent:@"elements"];
+            if ([[NSFileManager defaultManager] fileExistsAtPath:modelElementsFilePath]) {
+                *error = [NSError errorWithDomain:NSCocoaErrorDomain code:-1 userInfo:@{NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Could not read the model at %@, only Xcode 4.0+ file format models are supported", xcdatamodelPath]}];
+            } else {
+                *error = [NSError errorWithDomain:NSCocoaErrorDomain code:-1 userInfo:@{NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Could not find a model contents file at %@", xcdatamodelPath]}];
+            }
         }
     }
     return momPath;
