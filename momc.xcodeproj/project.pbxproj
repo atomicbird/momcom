@@ -74,6 +74,7 @@
 		EE259B07172F125A00A309CF /* momcTests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = momcTests.xcdatamodel; sourceTree = "<group>"; };
 		EE259B13172F196B00A309CF /* momcTests 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "momcTests 2.xcdatamodel"; sourceTree = "<group>"; };
 		EE259B17172F1D3400A309CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EE259B5817308DDE00A309CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		EEA48B0217271D490063C9BA /* NSFetchRequest+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchRequest+momc.h"; sourceTree = "<group>"; };
 		EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+momc.m"; sourceTree = "<group>"; };
 		EEC0EE7F171F61BF003328B2 /* momc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = momc; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +204,7 @@
 				EEA48B0217271D490063C9BA /* NSFetchRequest+momc.h */,
 				EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */,
 				EEC0EE89171F61BF003328B2 /* momc.1 */,
+				EE259B5817308DDE00A309CF /* README.md */,
 				EEC0EE87171F61BF003328B2 /* Supporting Files */,
 			);
 			path = momc;

@@ -50,7 +50,6 @@
 
     for (NSXMLElement *childNode in [xmlNode children]) {
         if ([[childNode name] isEqualToString:@"userInfo"]) {
-            NSLog(@"userInfo: %@", childNode);
             for (NSXMLElement *entryElement in [childNode children]) {
                 NSXMLNode *keyAttribute = [entryElement attributeForName:@"key"];
                 NSXMLNode *valueAttribute = [entryElement attributeForName:@"value"];
