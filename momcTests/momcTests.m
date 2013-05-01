@@ -62,7 +62,7 @@
     // Compile the model into a temporary directory
     NSString *momcTestDir = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"momcTests-%d", getpid()]];
     [[NSFileManager defaultManager] createDirectoryAtPath:momcTestDir withIntermediateDirectories:YES attributes:0 error:nil];
-    NSString *compiledModelPath = [NSManagedObjectModel compileModelAtPath:uncompiledModelPath inDirectory:momcTestDir];
+    NSString *compiledModelPath = [NSManagedObjectModel compileModelAtPath:uncompiledModelPath inDirectory:momcTestDir error:nil];
     NSManagedObjectModel *compiledModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:[NSURL fileURLWithPath:compiledModelPath]];
     
     // For comparison, have xcrun compile the model.
