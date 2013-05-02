@@ -1,5 +1,5 @@
 //
-//  NSEntityDescription+momc.h
+//  NSEntityDescription+momcom.h
 //  momc
 //
 //  Created by Tom Harrington on 4/17/13.
@@ -8,7 +8,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface NSEntityDescription (momc)
+@interface NSEntityDescription (momcom)
 
 + (NSEntityDescription *)baseEntityForXML:(NSXMLElement *)xmlNode;
 

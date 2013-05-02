@@ -10,30 +10,30 @@
 		EE259AF2172F11B200A309CF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE259AF1172F11B200A309CF /* SenTestingKit.framework */; };
 		EE259AF4172F11B200A309CF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE259AF3172F11B200A309CF /* Cocoa.framework */; };
 		EE259AFE172F11B200A309CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE259AFC172F11B200A309CF /* InfoPlist.strings */; };
-		EE259B01172F11B200A309CF /* momcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE259B00172F11B200A309CF /* momcTests.m */; };
-		EE259B08172F125A00A309CF /* momcTests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE259B06172F125A00A309CF /* momcTests.xcdatamodeld */; };
+		EE259B01172F11B200A309CF /* momcomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE259B00172F11B200A309CF /* momcomTests.m */; };
+		EE259B08172F125A00A309CF /* momcomTests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE259B06172F125A00A309CF /* momcomTests.xcdatamodeld */; };
 		EE259B09172F126900A309CF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC0EE93171F6203003328B2 /* CoreData.framework */; };
-		EE259B0B172F129F00A309CF /* momcTests.xcdatamodeld in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE259B06172F125A00A309CF /* momcTests.xcdatamodeld */; };
-		EE259B0C172F16DA00A309CF /* NSManagedObjectModel+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momc.m */; };
-		EE259B0D172F16DA00A309CF /* NSEntityDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE96171F6426003328B2 /* NSEntityDescription+momc.m */; };
-		EE259B0E172F16DA00A309CF /* NSAttributeDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE991720A362003328B2 /* NSAttributeDescription+momc.m */; };
-		EE259B0F172F16DA00A309CF /* NSPropertyDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momc.m */; };
-		EE259B10172F16DA00A309CF /* NSRelationshipDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momc.m */; };
-		EE259B11172F16DA00A309CF /* NSFetchedPropertyDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momc.m */; };
-		EE259B12172F16DA00A309CF /* NSFetchRequest+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */; };
+		EE259B0B172F129F00A309CF /* momcomTests.xcdatamodeld in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE259B06172F125A00A309CF /* momcomTests.xcdatamodeld */; };
+		EE259B0C172F16DA00A309CF /* NSManagedObjectModel+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momcom.m */; };
+		EE259B0D172F16DA00A309CF /* NSEntityDescription+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE96171F6426003328B2 /* NSEntityDescription+momcom.m */; };
+		EE259B0E172F16DA00A309CF /* NSAttributeDescription+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE991720A362003328B2 /* NSAttributeDescription+momcom.m */; };
+		EE259B0F172F16DA00A309CF /* NSPropertyDescription+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momcom.m */; };
+		EE259B10172F16DA00A309CF /* NSRelationshipDescription+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momcom.m */; };
+		EE259B11172F16DA00A309CF /* NSFetchedPropertyDescription+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momcom.m */; };
+		EE259B12172F16DA00A309CF /* NSFetchRequest+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA48B0317271D490063C9BA /* NSFetchRequest+momcom.m */; };
 		EE259B18172F1D3400A309CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE259B17172F1D3400A309CF /* Security.framework */; };
 		EE259B19172F1E1700A309CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE259B17172F1D3400A309CF /* Security.framework */; };
-		EEA48B0417271D4A0063C9BA /* NSFetchRequest+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */; };
+		EEA48B0417271D4A0063C9BA /* NSFetchRequest+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA48B0317271D490063C9BA /* NSFetchRequest+momcom.m */; };
 		EEC0EE83171F61BF003328B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC0EE82171F61BF003328B2 /* Foundation.framework */; };
 		EEC0EE86171F61BF003328B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE85171F61BF003328B2 /* main.m */; };
-		EEC0EE8A171F61BF003328B2 /* momc.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEC0EE89171F61BF003328B2 /* momc.1 */; };
-		EEC0EE92171F61E8003328B2 /* NSManagedObjectModel+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momc.m */; };
+		EEC0EE8A171F61BF003328B2 /* momcom.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EEC0EE89171F61BF003328B2 /* momcom.1 */; };
+		EEC0EE92171F61E8003328B2 /* NSManagedObjectModel+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momcom.m */; };
 		EEC0EE94171F6203003328B2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC0EE93171F6203003328B2 /* CoreData.framework */; };
-		EEC0EE97171F6426003328B2 /* NSEntityDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE96171F6426003328B2 /* NSEntityDescription+momc.m */; };
-		EEC0EE9A1720A362003328B2 /* NSAttributeDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE991720A362003328B2 /* NSAttributeDescription+momc.m */; };
-		EEC0EE9D1720A388003328B2 /* NSPropertyDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momc.m */; };
-		EEC0EEA01720A89F003328B2 /* NSRelationshipDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momc.m */; };
-		EEC0EEA31720A94B003328B2 /* NSFetchedPropertyDescription+momc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momc.m */; };
+		EEC0EE97171F6426003328B2 /* NSEntityDescription+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE96171F6426003328B2 /* NSEntityDescription+momcom.m */; };
+		EEC0EE9A1720A362003328B2 /* NSAttributeDescription+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE991720A362003328B2 /* NSAttributeDescription+momcom.m */; };
+		EEC0EE9D1720A388003328B2 /* NSPropertyDescription+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momcom.m */; };
+		EEC0EEA01720A89F003328B2 /* NSRelationshipDescription+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momcom.m */; };
+		EEC0EEA31720A94B003328B2 /* NSFetchedPropertyDescription+momcom.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momcom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				EE259B0B172F129F00A309CF /* momcTests.xcdatamodeld in CopyFiles */,
+				EE259B0B172F129F00A309CF /* momcomTests.xcdatamodeld in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,48 +53,48 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				EEC0EE8A171F61BF003328B2 /* momc.1 in CopyFiles */,
+				EEC0EE8A171F61BF003328B2 /* momcom.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EE259AF0172F11B200A309CF /* momcTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = momcTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE259AF0172F11B200A309CF /* momcomTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = momcomTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE259AF1172F11B200A309CF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		EE259AF3172F11B200A309CF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		EE259AF6172F11B200A309CF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		EE259AF7172F11B200A309CF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EE259AF8172F11B200A309CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		EE259AFB172F11B200A309CF /* momcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "momcTests-Info.plist"; sourceTree = "<group>"; };
+		EE259AFB172F11B200A309CF /* momcomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "momcomTests-Info.plist"; sourceTree = "<group>"; };
 		EE259AFD172F11B200A309CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EE259AFF172F11B200A309CF /* momcTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = momcTests.h; sourceTree = "<group>"; };
-		EE259B00172F11B200A309CF /* momcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = momcTests.m; sourceTree = "<group>"; };
-		EE259B02172F11B200A309CF /* momcTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "momcTests-Prefix.pch"; sourceTree = "<group>"; };
+		EE259AFF172F11B200A309CF /* momcomTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = momcomTests.h; sourceTree = "<group>"; };
+		EE259B00172F11B200A309CF /* momcomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = momcomTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EE259B02172F11B200A309CF /* momcomTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "momcomTests-Prefix.pch"; sourceTree = "<group>"; };
 		EE259B07172F125A00A309CF /* momcTests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = momcTests.xcdatamodel; sourceTree = "<group>"; };
-		EE259B13172F196B00A309CF /* momcTests 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "momcTests 2.xcdatamodel"; sourceTree = "<group>"; };
+		EE259B13172F196B00A309CF /* momcTests 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "momcTests 2.xcdatamodel"; sourceTree = "<group>"; };
 		EE259B17172F1D3400A309CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		EE259B5817308DDE00A309CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		EEA48B0217271D490063C9BA /* NSFetchRequest+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchRequest+momc.h"; sourceTree = "<group>"; };
-		EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+momc.m"; sourceTree = "<group>"; };
-		EEC0EE7F171F61BF003328B2 /* momc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = momc; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE259B5817308DDE00A309CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = README.md; sourceTree = "<group>"; };
+		EEA48B0217271D490063C9BA /* NSFetchRequest+momcom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSFetchRequest+momcom.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EEA48B0317271D490063C9BA /* NSFetchRequest+momcom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSFetchRequest+momcom.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EE7F171F61BF003328B2 /* momcom */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = momcom; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC0EE82171F61BF003328B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		EEC0EE85171F61BF003328B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EEC0EE88171F61BF003328B2 /* momc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "momc-Prefix.pch"; sourceTree = "<group>"; };
-		EEC0EE89171F61BF003328B2 /* momc.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = momc.1; sourceTree = "<group>"; };
-		EEC0EE90171F61E8003328B2 /* NSManagedObjectModel+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+momc.h"; sourceTree = "<group>"; };
-		EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSManagedObjectModel+momc.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EE85171F61BF003328B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EE88171F61BF003328B2 /* momcom-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "momcom-Prefix.pch"; sourceTree = "<group>"; };
+		EEC0EE89171F61BF003328B2 /* momcom.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = momcom.1; sourceTree = "<group>"; };
+		EEC0EE90171F61E8003328B2 /* NSManagedObjectModel+momcom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSManagedObjectModel+momcom.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momcom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSManagedObjectModel+momcom.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		EEC0EE93171F6203003328B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		EEC0EE95171F6426003328B2 /* NSEntityDescription+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSEntityDescription+momc.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		EEC0EE96171F6426003328B2 /* NSEntityDescription+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSEntityDescription+momc.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		EEC0EE981720A362003328B2 /* NSAttributeDescription+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSAttributeDescription+momc.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		EEC0EE991720A362003328B2 /* NSAttributeDescription+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSAttributeDescription+momc.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		EEC0EE9B1720A388003328B2 /* NSPropertyDescription+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPropertyDescription+momc.h"; sourceTree = "<group>"; };
-		EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPropertyDescription+momc.m"; sourceTree = "<group>"; };
-		EEC0EE9E1720A89F003328B2 /* NSRelationshipDescription+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRelationshipDescription+momc.h"; sourceTree = "<group>"; };
-		EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRelationshipDescription+momc.m"; sourceTree = "<group>"; };
-		EEC0EEA11720A94B003328B2 /* NSFetchedPropertyDescription+momc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSFetchedPropertyDescription+momc.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSFetchedPropertyDescription+momc.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EE95171F6426003328B2 /* NSEntityDescription+momcom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSEntityDescription+momcom.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EEC0EE96171F6426003328B2 /* NSEntityDescription+momcom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSEntityDescription+momcom.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EE981720A362003328B2 /* NSAttributeDescription+momcom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSAttributeDescription+momcom.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EEC0EE991720A362003328B2 /* NSAttributeDescription+momcom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSAttributeDescription+momcom.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EE9B1720A388003328B2 /* NSPropertyDescription+momcom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSPropertyDescription+momcom.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momcom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSPropertyDescription+momcom.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EE9E1720A89F003328B2 /* NSRelationshipDescription+momcom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSRelationshipDescription+momcom.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momcom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSRelationshipDescription+momcom.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EEC0EEA11720A94B003328B2 /* NSFetchedPropertyDescription+momcom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSFetchedPropertyDescription+momcom.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momcom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSFetchedPropertyDescription+momcom.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,23 +132,24 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		EE259AF9172F11B200A309CF /* momcTests */ = {
+		EE259AF9172F11B200A309CF /* momcomTests */ = {
 			isa = PBXGroup;
 			children = (
-				EE259AFF172F11B200A309CF /* momcTests.h */,
-				EE259B00172F11B200A309CF /* momcTests.m */,
+				EE259AFF172F11B200A309CF /* momcomTests.h */,
+				EE259B00172F11B200A309CF /* momcomTests.m */,
 				EE259AFA172F11B200A309CF /* Supporting Files */,
-				EE259B06172F125A00A309CF /* momcTests.xcdatamodeld */,
+				EE259B06172F125A00A309CF /* momcomTests.xcdatamodeld */,
 			);
+			name = momcomTests;
 			path = momcTests;
 			sourceTree = "<group>";
 		};
 		EE259AFA172F11B200A309CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EE259AFB172F11B200A309CF /* momcTests-Info.plist */,
+				EE259AFB172F11B200A309CF /* momcomTests-Info.plist */,
 				EE259AFC172F11B200A309CF /* InfoPlist.strings */,
-				EE259B02172F11B200A309CF /* momcTests-Prefix.pch */,
+				EE259B02172F11B200A309CF /* momcomTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -156,8 +157,8 @@
 		EEC0EE76171F61BF003328B2 = {
 			isa = PBXGroup;
 			children = (
-				EEC0EE84171F61BF003328B2 /* momc */,
-				EE259AF9172F11B200A309CF /* momcTests */,
+				EEC0EE84171F61BF003328B2 /* momcom */,
+				EE259AF9172F11B200A309CF /* momcomTests */,
 				EEC0EE81171F61BF003328B2 /* Frameworks */,
 				EEC0EE80171F61BF003328B2 /* Products */,
 			);
@@ -166,8 +167,8 @@
 		EEC0EE80171F61BF003328B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EEC0EE7F171F61BF003328B2 /* momc */,
-				EE259AF0172F11B200A309CF /* momcTests.octest */,
+				EEC0EE7F171F61BF003328B2 /* momcom */,
+				EE259AF0172F11B200A309CF /* momcomTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,35 +186,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EEC0EE84171F61BF003328B2 /* momc */ = {
+		EEC0EE84171F61BF003328B2 /* momcom */ = {
 			isa = PBXGroup;
 			children = (
 				EEC0EE85171F61BF003328B2 /* main.m */,
-				EEC0EE90171F61E8003328B2 /* NSManagedObjectModel+momc.h */,
-				EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momc.m */,
-				EEC0EE95171F6426003328B2 /* NSEntityDescription+momc.h */,
-				EEC0EE96171F6426003328B2 /* NSEntityDescription+momc.m */,
-				EEC0EE981720A362003328B2 /* NSAttributeDescription+momc.h */,
-				EEC0EE991720A362003328B2 /* NSAttributeDescription+momc.m */,
-				EEC0EE9B1720A388003328B2 /* NSPropertyDescription+momc.h */,
-				EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momc.m */,
-				EEC0EE9E1720A89F003328B2 /* NSRelationshipDescription+momc.h */,
-				EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momc.m */,
-				EEC0EEA11720A94B003328B2 /* NSFetchedPropertyDescription+momc.h */,
-				EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momc.m */,
-				EEA48B0217271D490063C9BA /* NSFetchRequest+momc.h */,
-				EEA48B0317271D490063C9BA /* NSFetchRequest+momc.m */,
-				EEC0EE89171F61BF003328B2 /* momc.1 */,
+				EEC0EE90171F61E8003328B2 /* NSManagedObjectModel+momcom.h */,
+				EEC0EE91171F61E8003328B2 /* NSManagedObjectModel+momcom.m */,
+				EEC0EE95171F6426003328B2 /* NSEntityDescription+momcom.h */,
+				EEC0EE96171F6426003328B2 /* NSEntityDescription+momcom.m */,
+				EEC0EE981720A362003328B2 /* NSAttributeDescription+momcom.h */,
+				EEC0EE991720A362003328B2 /* NSAttributeDescription+momcom.m */,
+				EEC0EE9B1720A388003328B2 /* NSPropertyDescription+momcom.h */,
+				EEC0EE9C1720A388003328B2 /* NSPropertyDescription+momcom.m */,
+				EEC0EE9E1720A89F003328B2 /* NSRelationshipDescription+momcom.h */,
+				EEC0EE9F1720A89F003328B2 /* NSRelationshipDescription+momcom.m */,
+				EEC0EEA11720A94B003328B2 /* NSFetchedPropertyDescription+momcom.h */,
+				EEC0EEA21720A94B003328B2 /* NSFetchedPropertyDescription+momcom.m */,
+				EEA48B0217271D490063C9BA /* NSFetchRequest+momcom.h */,
+				EEA48B0317271D490063C9BA /* NSFetchRequest+momcom.m */,
+				EEC0EE89171F61BF003328B2 /* momcom.1 */,
 				EE259B5817308DDE00A309CF /* README.md */,
 				EEC0EE87171F61BF003328B2 /* Supporting Files */,
 			);
+			name = momcom;
 			path = momc;
 			sourceTree = "<group>";
 		};
 		EEC0EE87171F61BF003328B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EEC0EE88171F61BF003328B2 /* momc-Prefix.pch */,
+				EEC0EE88171F61BF003328B2 /* momcom-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -221,9 +223,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE259AEF172F11B200A309CF /* momcTests */ = {
+		EE259AEF172F11B200A309CF /* momcomTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE259B05172F11B200A309CF /* Build configuration list for PBXNativeTarget "momcTests" */;
+			buildConfigurationList = EE259B05172F11B200A309CF /* Build configuration list for PBXNativeTarget "momcomTests" */;
 			buildPhases = (
 				EE259AEB172F11B200A309CF /* Sources */,
 				EE259AEC172F11B200A309CF /* Frameworks */,
@@ -235,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = momcTests;
+			name = momcomTests;
 			productName = momcTests;
-			productReference = EE259AF0172F11B200A309CF /* momcTests.octest */;
+			productReference = EE259AF0172F11B200A309CF /* momcomTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		EEC0EE7E171F61BF003328B2 /* momc */ = {
+		EEC0EE7E171F61BF003328B2 /* momcom */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EEC0EE8D171F61BF003328B2 /* Build configuration list for PBXNativeTarget "momc" */;
+			buildConfigurationList = EEC0EE8D171F61BF003328B2 /* Build configuration list for PBXNativeTarget "momcom" */;
 			buildPhases = (
 				EEC0EE7B171F61BF003328B2 /* Sources */,
 				EEC0EE7C171F61BF003328B2 /* Frameworks */,
@@ -252,9 +254,9 @@
 			);
 			dependencies = (
 			);
-			name = momc;
+			name = momcom;
 			productName = momc;
-			productReference = EEC0EE7F171F61BF003328B2 /* momc */;
+			productReference = EEC0EE7F171F61BF003328B2 /* momcom */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -266,7 +268,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Tom Harrington";
 			};
-			buildConfigurationList = EEC0EE7A171F61BF003328B2 /* Build configuration list for PBXProject "momc" */;
+			buildConfigurationList = EEC0EE7A171F61BF003328B2 /* Build configuration list for PBXProject "momcom" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -278,8 +280,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EEC0EE7E171F61BF003328B2 /* momc */,
-				EE259AEF172F11B200A309CF /* momcTests */,
+				EEC0EE7E171F61BF003328B2 /* momcom */,
+				EE259AEF172F11B200A309CF /* momcomTests */,
 			);
 		};
 /* End PBXProject section */
@@ -316,15 +318,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE259B0C172F16DA00A309CF /* NSManagedObjectModel+momc.m in Sources */,
-				EE259B0D172F16DA00A309CF /* NSEntityDescription+momc.m in Sources */,
-				EE259B0E172F16DA00A309CF /* NSAttributeDescription+momc.m in Sources */,
-				EE259B0F172F16DA00A309CF /* NSPropertyDescription+momc.m in Sources */,
-				EE259B10172F16DA00A309CF /* NSRelationshipDescription+momc.m in Sources */,
-				EE259B11172F16DA00A309CF /* NSFetchedPropertyDescription+momc.m in Sources */,
-				EE259B12172F16DA00A309CF /* NSFetchRequest+momc.m in Sources */,
-				EE259B01172F11B200A309CF /* momcTests.m in Sources */,
-				EE259B08172F125A00A309CF /* momcTests.xcdatamodeld in Sources */,
+				EE259B0C172F16DA00A309CF /* NSManagedObjectModel+momcom.m in Sources */,
+				EE259B0D172F16DA00A309CF /* NSEntityDescription+momcom.m in Sources */,
+				EE259B0E172F16DA00A309CF /* NSAttributeDescription+momcom.m in Sources */,
+				EE259B0F172F16DA00A309CF /* NSPropertyDescription+momcom.m in Sources */,
+				EE259B10172F16DA00A309CF /* NSRelationshipDescription+momcom.m in Sources */,
+				EE259B11172F16DA00A309CF /* NSFetchedPropertyDescription+momcom.m in Sources */,
+				EE259B12172F16DA00A309CF /* NSFetchRequest+momcom.m in Sources */,
+				EE259B01172F11B200A309CF /* momcomTests.m in Sources */,
+				EE259B08172F125A00A309CF /* momcomTests.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,13 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC0EE86171F61BF003328B2 /* main.m in Sources */,
-				EEC0EE92171F61E8003328B2 /* NSManagedObjectModel+momc.m in Sources */,
-				EEC0EE97171F6426003328B2 /* NSEntityDescription+momc.m in Sources */,
-				EEC0EE9A1720A362003328B2 /* NSAttributeDescription+momc.m in Sources */,
-				EEC0EE9D1720A388003328B2 /* NSPropertyDescription+momc.m in Sources */,
-				EEC0EEA01720A89F003328B2 /* NSRelationshipDescription+momc.m in Sources */,
-				EEC0EEA31720A94B003328B2 /* NSFetchedPropertyDescription+momc.m in Sources */,
-				EEA48B0417271D4A0063C9BA /* NSFetchRequest+momc.m in Sources */,
+				EEC0EE92171F61E8003328B2 /* NSManagedObjectModel+momcom.m in Sources */,
+				EEC0EE97171F6426003328B2 /* NSEntityDescription+momcom.m in Sources */,
+				EEC0EE9A1720A362003328B2 /* NSAttributeDescription+momcom.m in Sources */,
+				EEC0EE9D1720A388003328B2 /* NSPropertyDescription+momcom.m in Sources */,
+				EEC0EEA01720A89F003328B2 /* NSRelationshipDescription+momcom.m in Sources */,
+				EEC0EEA31720A94B003328B2 /* NSFetchedPropertyDescription+momcom.m in Sources */,
+				EEA48B0417271D4A0063C9BA /* NSFetchRequest+momcom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,9 +365,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "momcTests/momcTests-Prefix.pch";
-				INFOPLIST_FILE = "momcTests/momcTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "momcTests/momcomTests-Prefix.pch";
+				INFOPLIST_FILE = "momcTests/momcomTests-Info.plist";
+				PRODUCT_NAME = momcomTests;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -376,9 +378,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "momcTests/momcTests-Prefix.pch";
-				INFOPLIST_FILE = "momcTests/momcTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "momcTests/momcomTests-Prefix.pch";
+				INFOPLIST_FILE = "momcTests/momcomTests-Info.plist";
+				PRODUCT_NAME = momcomTests;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -446,8 +448,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "momc/momc-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "momc/momcom-Prefix.pch";
+				PRODUCT_NAME = momcom;
 			};
 			name = Debug;
 		};
@@ -455,15 +457,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "momc/momc-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "momc/momcom-Prefix.pch";
+				PRODUCT_NAME = momcom;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE259B05172F11B200A309CF /* Build configuration list for PBXNativeTarget "momcTests" */ = {
+		EE259B05172F11B200A309CF /* Build configuration list for PBXNativeTarget "momcomTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE259B03172F11B200A309CF /* Debug */,
@@ -472,7 +474,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EEC0EE7A171F61BF003328B2 /* Build configuration list for PBXProject "momc" */ = {
+		EEC0EE7A171F61BF003328B2 /* Build configuration list for PBXProject "momcom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEC0EE8B171F61BF003328B2 /* Debug */,
@@ -481,7 +483,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EEC0EE8D171F61BF003328B2 /* Build configuration list for PBXNativeTarget "momc" */ = {
+		EEC0EE8D171F61BF003328B2 /* Build configuration list for PBXNativeTarget "momcom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEC0EE8E171F61BF003328B2 /* Debug */,
@@ -493,14 +495,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		EE259B06172F125A00A309CF /* momcTests.xcdatamodeld */ = {
+		EE259B06172F125A00A309CF /* momcomTests.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				EE259B13172F196B00A309CF /* momcTests 2.xcdatamodel */,
 				EE259B07172F125A00A309CF /* momcTests.xcdatamodel */,
 			);
 			currentVersion = EE259B13172F196B00A309CF /* momcTests 2.xcdatamodel */;
-			path = momcTests.xcdatamodeld;
+			path = momcomTests.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

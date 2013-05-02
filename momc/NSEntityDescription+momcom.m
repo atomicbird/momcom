@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Tom Harrington. All rights reserved.
 //
 
-#import "NSEntityDescription+momc.h"
-#import "NSAttributeDescription+momc.h"
-#import "NSRelationshipDescription+momc.h"
-#import "NSFetchedPropertyDescription+momc.h"
-#import "NSFetchRequest+momc.h"
+#import "NSEntityDescription+momcom.h"
+#import "NSAttributeDescription+momcom.h"
+#import "NSRelationshipDescription+momcom.h"
+#import "NSFetchedPropertyDescription+momcom.h"
+#import "NSFetchRequest+momcom.h"
 
-@implementation NSEntityDescription (momc)
+@implementation NSEntityDescription (momcom)
 
 + (NSEntityDescription *)baseEntityForXML:(NSXMLElement *)xmlNode
 {

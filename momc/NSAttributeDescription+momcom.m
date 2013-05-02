@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Tom Harrington. All rights reserved.
 //
 
-#import "NSAttributeDescription+momc.h"
-#import "NSPropertyDescription+momc.h"
+#import "NSAttributeDescription+momcom.h"
+#import "NSPropertyDescription+momcom.h"
 
 static NSDictionary *attributeTypeForString;
 
-@implementation NSAttributeDescription (momc)
+@implementation NSAttributeDescription (momcom)
 
 + (void)initialize
 {

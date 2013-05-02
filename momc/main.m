@@ -1,13 +1,13 @@
 //
 //  main.m
-//  momc
+//  momcom
 //
 //  Created by Tom Harrington on 4/17/13.
 //  Copyright (c) 2013 Tom Harrington. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "NSManagedObjectModel+momc.h"
+#import "NSManagedObjectModel+momcom.h"
 
 /*
  Source         Result
@@ -38,14 +38,8 @@ int main(int argc, const char * argv[])
             }
             return 0;
         } else {
-            fprintf(stderr, "Usage: momc (foo.xcdatamodel|foo.xcdatamodeld) [output directory]\n");
+            fprintf(stderr, "Usage: momcom (foo.xcdatamodel|foo.xcdatamodeld) [output directory]\n");
         }
-/*
-        NSURL *fileURL = [NSURL fileURLWithPath:@"/Users/tph/Dropbox/Projects/momdec/momdecTests/momdecTests.xcdatamodeld/momdecTests.xcdatamodel/contents"];
-        NSError *compileError = nil;
-        NSXMLDocument *document = [[NSXMLDocument alloc] initWithContentsOfURL:fileURL options:0 error:&compileError];
-        NSManagedObjectModel *model = [NSManagedObjectModel compileFromDocument:document error:&compileError];
- */
     }
     return 0;
 }

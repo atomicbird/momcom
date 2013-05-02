@@ -1,5 +1,5 @@
 //
-//  NSFetchRequest+momc.h
+//  NSFetchRequest+momcom.h
 //  momc
 //
 //  Created by Tom Harrington on 4/23/13.
@@ -8,7 +8,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface NSFetchRequest (momc)
+@interface NSFetchRequest (momcom)
 
 + (NSFetchRequest *)fetchRequestForXML:(NSXMLElement *)fetchRequestXMLNode inManagedObjectModel:(NSManagedObjectModel *)model;
 @end

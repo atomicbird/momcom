@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Tom Harrington. All rights reserved.
 //
 
-#import "NSFetchRequest+momc.h"
+#import "NSFetchRequest+momcom.h"
 
-@implementation NSFetchRequest (momc)
+@implementation NSFetchRequest (momcom)
 
 + (NSFetchRequest *)fetchRequestForXML:(NSXMLElement *)fetchRequestXMLNode inManagedObjectModel:(NSManagedObjectModel *)model
 {

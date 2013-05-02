@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Tom Harrington. All rights reserved.
 //
 
-#import "NSRelationshipDescription+momc.h"
-#import "NSPropertyDescription+momc.h"
+#import "NSRelationshipDescription+momcom.h"
+#import "NSPropertyDescription+momcom.h"
 
-@implementation NSRelationshipDescription (momc)
+@implementation NSRelationshipDescription (momcom)
 
 + (NSRelationshipDescription *)baseEntityForXML:(NSXMLElement *)xmlNode;
 {

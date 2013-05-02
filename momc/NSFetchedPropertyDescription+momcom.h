@@ -1,5 +1,5 @@
 //
-//  NSFetchedPropertyDescription+momc.h
+//  NSFetchedPropertyDescription+momcom.h
 //  momc
 //
 //  Created by Tom Harrington on 4/18/13.
@@ -8,7 +8,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface NSFetchedPropertyDescription (momc)
+@interface NSFetchedPropertyDescription (momcom)
 
 + (NSFetchedPropertyDescription *)baseEntityForXML:(NSXMLElement *)xmlNode;
 

@@ -1,15 +1,15 @@
 //
-//  momcTests.m
-//  momcTests
+//  momcomTests.m
+//  momcomTests
 //
 //  Created by Tom Harrington on 4/29/13.
 //  Copyright (c) 2013 Tom Harrington. All rights reserved.
 //
 
-#import "momcTests.h"
-#import "NSManagedObjectModel+momc.h"
+#import "momcomTests.h"
+#import "NSManagedObjectModel+momcom.h"
 
-@implementation momcTests
+@implementation momcomTests
 
 - (void)setUp
 {
@@ -57,16 +57,16 @@
 {
     // Get the uncompiled model path
     NSBundle *selfBundle = [NSBundle bundleForClass:[self class]];
-    NSString *uncompiledModelPath = [selfBundle pathForResource:@"momcTests" ofType:@"xcdatamodeld"];
+    NSString *uncompiledModelPath = [selfBundle pathForResource:@"momcomTests" ofType:@"xcdatamodeld"];
     
     // Compile the model into a temporary directory
-    NSString *momcTestDir = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"momcTests-%d", getpid()]];
+    NSString *momcTestDir = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"momcomTests-%d", getpid()]];
     [[NSFileManager defaultManager] createDirectoryAtPath:momcTestDir withIntermediateDirectories:YES attributes:0 error:nil];
     NSString *compiledModelPath = [NSManagedObjectModel compileModelAtPath:uncompiledModelPath inDirectory:momcTestDir error:nil];
     NSManagedObjectModel *compiledModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:[NSURL fileURLWithPath:compiledModelPath]];
     
     // For comparison, have xcrun compile the model.
-    NSString *xcrunCompiledModelPath = [momcTestDir stringByAppendingPathComponent:@"momcTests-xcrun.momd"];
+    NSString *xcrunCompiledModelPath = [momcTestDir stringByAppendingPathComponent:@"momcomTests-xcrun.momd"];
     NSTask *compileTask = [NSTask launchedTaskWithLaunchPath:@"/usr/bin/xcrun" arguments:@[@"momc", uncompiledModelPath, xcrunCompiledModelPath]];
     [compileTask waitUntilExit];
     NSManagedObjectModel *xcrunCompiledModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:[NSURL fileURLWithPath:xcrunCompiledModelPath]];

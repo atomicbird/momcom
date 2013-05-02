@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Tom Harrington. All rights reserved.
 //
 
-#import "NSManagedObjectModel+momc.h"
-#import "NSEntityDescription+momc.h"
-#import "NSFetchRequest+momc.h"
+#import "NSManagedObjectModel+momcom.h"
+#import "NSEntityDescription+momcom.h"
+#import "NSFetchRequest+momcom.h"
 
-@implementation NSManagedObjectModel (momc)
+@implementation NSManagedObjectModel (momcom)
 
 + (NSManagedObjectModel *)compileFromDocument:(NSXMLDocument *)sourceModelDocument error:(NSError **)error;
 {

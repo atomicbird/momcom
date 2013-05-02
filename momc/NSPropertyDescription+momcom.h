@@ -1,5 +1,5 @@
 //
-//  NSAttributeDescription+momc.h
+//  NSPropertyDescription+momcom.h
 //  momc
 //
 //  Created by Tom Harrington on 4/18/13.
@@ -8,8 +8,8 @@
 
 #import <CoreData/CoreData.h>
 
-@interface NSAttributeDescription (momc)
+@interface NSPropertyDescription (momcom)
 
-+ (NSAttributeDescription *)baseEntityForXML:(NSXMLElement *)xmlNode;
++ (id)baseEntityForXML:(NSXMLElement *)xmlNode;
 
 @end

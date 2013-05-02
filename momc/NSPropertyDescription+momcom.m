@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Tom Harrington. All rights reserved.
 //
 
-#import "NSPropertyDescription+momc.h"
+#import "NSPropertyDescription+momcom.h"
 
-@implementation NSPropertyDescription (momc)
+@implementation NSPropertyDescription (momcom)
 
 + (id)baseEntityForXML:(NSXMLElement *)xmlNode
 {

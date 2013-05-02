@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Tom Harrington. All rights reserved.
 //
 
-#import "NSFetchedPropertyDescription+momc.h"
-#import "NSPropertyDescription+momc.h"
+#import "NSFetchedPropertyDescription+momcom.h"
+#import "NSPropertyDescription+momcom.h"
 
-@implementation NSFetchedPropertyDescription (momc)
+@implementation NSFetchedPropertyDescription (momcom)
 
 + (NSFetchedPropertyDescription *)baseEntityForXML:(NSXMLElement *)xmlNode
 {
