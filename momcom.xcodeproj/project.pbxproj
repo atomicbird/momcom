@@ -140,8 +140,7 @@
 				EE259AFA172F11B200A309CF /* Supporting Files */,
 				EE259B06172F125A00A309CF /* momcomTests.xcdatamodeld */,
 			);
-			name = momcomTests;
-			path = momcTests;
+			path = momcomTests;
 			sourceTree = "<group>";
 		};
 		EE259AFA172F11B200A309CF /* Supporting Files */ = {
@@ -208,8 +207,7 @@
 				EE259B5817308DDE00A309CF /* README.md */,
 				EEC0EE87171F61BF003328B2 /* Supporting Files */,
 			);
-			name = momcom;
-			path = momc;
+			path = momcom;
 			sourceTree = "<group>";
 		};
 		EEC0EE87171F61BF003328B2 /* Supporting Files */ = {
@@ -365,8 +363,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "momcTests/momcomTests-Prefix.pch";
-				INFOPLIST_FILE = "momcTests/momcomTests-Info.plist";
+				GCC_PREFIX_HEADER = "momcomTests/momcomTests-Prefix.pch";
+				INFOPLIST_FILE = "momcomTests/momcomTests-Info.plist";
 				PRODUCT_NAME = momcomTests;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -378,8 +376,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "momcTests/momcomTests-Prefix.pch";
-				INFOPLIST_FILE = "momcTests/momcomTests-Info.plist";
+				GCC_PREFIX_HEADER = "momcomTests/momcomTests-Prefix.pch";
+				INFOPLIST_FILE = "momcomTests/momcomTests-Info.plist";
 				PRODUCT_NAME = momcomTests;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -448,7 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "momc/momcom-Prefix.pch";
+				GCC_PREFIX_HEADER = "momcom/momcom-Prefix.pch";
 				PRODUCT_NAME = momcom;
 			};
 			name = Debug;
@@ -457,7 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "momc/momcom-Prefix.pch";
+				GCC_PREFIX_HEADER = "momcom/momcom-Prefix.pch";
 				PRODUCT_NAME = momcom;
 			};
 			name = Release;
