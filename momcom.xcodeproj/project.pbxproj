@@ -74,7 +74,8 @@
 		EE259B07172F125A00A309CF /* momcTests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = momcTests.xcdatamodel; sourceTree = "<group>"; };
 		EE259B13172F196B00A309CF /* momcTests 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "momcTests 2.xcdatamodel"; sourceTree = "<group>"; };
 		EE259B17172F1D3400A309CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		EE259B5817308DDE00A309CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = README.md; sourceTree = "<group>"; };
+		EE259B5817308DDE00A309CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EE5ED84D17332C180013CCD1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EEA48B0217271D490063C9BA /* NSFetchRequest+momcom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSFetchRequest+momcom.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EEA48B0317271D490063C9BA /* NSFetchRequest+momcom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSFetchRequest+momcom.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		EEC0EE7F171F61BF003328B2 /* momcom */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = momcom; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +206,7 @@
 				EEA48B0317271D490063C9BA /* NSFetchRequest+momcom.m */,
 				EEC0EE89171F61BF003328B2 /* momcom.1 */,
 				EE259B5817308DDE00A309CF /* README.md */,
+				EE5ED84D17332C180013CCD1 /* LICENSE */,
 				EEC0EE87171F61BF003328B2 /* Supporting Files */,
 			);
 			path = momcom;
