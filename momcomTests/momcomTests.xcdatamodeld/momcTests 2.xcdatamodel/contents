@@ -49,7 +49,9 @@
         <attribute name="birthday" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <fetchRequest name="FetchRequest" entity="Entity" predicateString="booleanAttribute == 1 AND floatAttribute > 5"/>
+    <fetchRequest name="FetchRequestDictionaries" entity="Entity" predicateString="booleanAttribute == 1 AND floatAttribute > 5" includeSubentities="YES" includePropertyValues="YES" includesPendingChanges="YES" returnObjectsAsFaults="YES" returnDistinctResults="YES" resultType="2"/>
+    <fetchRequest name="FetchRequestObjectIDs" entity="Entity" predicateString="booleanAttribute == 1 AND floatAttribute > 5" resultType="1"/>
+    <fetchRequest name="FetchRequestObjects" entity="Entity" predicateString="booleanAttribute == 1 AND floatAttribute > 5" fetchLimit="100" fetchBatchSize="10"/>
     <configuration name="UnrelatedConfiguration">
         <memberEntity name="UnrelatedEntity"/>
     </configuration>

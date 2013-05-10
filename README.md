@@ -10,7 +10,10 @@ Please note that momcom is **experimental**. Although it is intended to be at le
 
 Models compiled with momcom should be functionally equivalent to those compiled with Xcode's model compiler. **If you have a data model that does not compile correctly with momcom, please let me know.**
 
-In addition, momcom does not suffer from the bug in Xcode's model compiler in which min/max limits on decimal attributes are truncated to integer values. This bug is described more fully at [rdar://problem/13677527](rdar://problem/13677527) and [http://openradar.appspot.com/radar?id=2948402](http://openradar.appspot.com/radar?id=2948402).
+In addition, momcom does not suffer from the following bugs in Xcode's model compiler:
+
+* Min/max limits on decimal attributes are truncated to integer values. This bug is described more fully at [rdar://problem/13677527](rdar://problem/13677527) and [http://openradar.appspot.com/radar?id=2948402](http://openradar.appspot.com/radar?id=2948402).
+* Fetch request templates in a data model lose most of their configuration when compiled by Xcode. The fetch request name and target entity are maintained but all other attributes are lost and have default values at run time. [rdar://problem/13863607](rdar://problem/13863607) and [http://www.openradar.me/radar?id=3009404](http://www.openradar.me/radar?id=3009404).
 
 # Usage
 
