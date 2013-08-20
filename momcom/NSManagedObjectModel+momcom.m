@@ -81,28 +81,18 @@
     return model;
 }
 
-// Compile a single .xcdatamodel (a directory containing "contents").
-+ (NSString *)_compileSingleModelFile:(NSString *)xcdatamodelPath inDirectory:(NSString *)resultDirectoryPath error:(NSError **)error
++ (NSManagedObjectModel *)compileSingleModelAtPath:(NSString *)xcdatamodelPath error:(NSError **)error
 {
     NSManagedObjectModel *model = nil;
-    NSString *momPath = nil;
-    
+
     NSString *modelContentsFilePath = [xcdatamodelPath stringByAppendingPathComponent:@"contents"];
-    
+
     if ([[NSFileManager defaultManager] fileExistsAtPath:modelContentsFilePath]) {
         NSXMLDocument *sourceModelDocument = [[NSXMLDocument alloc] initWithContentsOfURL:[NSURL fileURLWithPath:modelContentsFilePath] options:0 error:error];
         if (sourceModelDocument == nil) {
             return nil;
         }
         model = [NSManagedObjectModel compileFromDocument:sourceModelDocument error:error];
-        
-        if (model != nil) {
-            momPath = [resultDirectoryPath stringByAppendingPathComponent:[[[xcdatamodelPath lastPathComponent] stringByDeletingPathExtension] stringByAppendingPathExtension:@"mom"]];
-            if (![[NSFileManager defaultManager] createDirectoryAtPath:resultDirectoryPath withIntermediateDirectories:YES attributes:0 error:error]) {
-                return nil;
-            }
-            [NSKeyedArchiver archiveRootObject:model toFile:momPath];
-        }
     } else {
         if (error != nil) {
             NSString *modelElementsFilePath = [xcdatamodelPath stringByAppendingPathComponent:@"elements"];
@@ -113,6 +103,24 @@
             }
         }
     }
+
+    return model;
+}
+
+// Compile a single .xcdatamodel (a directory containing "contents").
++ (NSString *)_compileSingleModelFile:(NSString *)xcdatamodelPath inDirectory:(NSString *)resultDirectoryPath error:(NSError **)error
+{
+    NSString *momPath = nil;
+    NSManagedObjectModel *model = [self compileSingleModelAtPath:xcdatamodelPath error:error];
+    
+    if (model != nil) {
+        momPath = [resultDirectoryPath stringByAppendingPathComponent:[[[xcdatamodelPath lastPathComponent] stringByDeletingPathExtension] stringByAppendingPathExtension:@"mom"]];
+        if (![[NSFileManager defaultManager] createDirectoryAtPath:resultDirectoryPath withIntermediateDirectories:YES attributes:0 error:error]) {
+            return nil;
+        }
+        [NSKeyedArchiver archiveRootObject:model toFile:momPath];
+    }
+    
     return momPath;
 }
 

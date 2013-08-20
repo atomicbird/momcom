@@ -11,6 +11,8 @@
 @interface NSManagedObjectModel (momcom)
 
 + (NSManagedObjectModel *)compileFromDocument:(NSXMLDocument *)sourceModelDocument error:(NSError **)error;
++ (NSManagedObjectModel *)compileSingleModelAtPath:(NSString *)xcdatamodelPath error:(NSError **)error;
+
 + (NSString *)compileModelAtPath:(NSString *)modelPath inDirectory:(NSString *)resultDirectoryPath error:(NSError **)error;
 
 @end
